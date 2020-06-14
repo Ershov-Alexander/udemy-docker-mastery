@@ -11,3 +11,4 @@
 - Tip: Drupal assumes DB is localhost, but it will actually be on the compose service name you give it
 - Use Docker Hub documentation to figure out the right environment and volume settings
 - Extra Credit: Use volumes to store Drupal unique data
+

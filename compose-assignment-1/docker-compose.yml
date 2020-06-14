@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  drupal:
+    image: drupal:8.8.2
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: some_pass
+      POSTGRES_USER: some_user
+    ports:
+    - '8080:80'
+  postgres:
+    image: postgres:12.1
+    environment:
+      POSTGRES_PASSWORD: some_pass
+      POSTGRES_USER: some_user
