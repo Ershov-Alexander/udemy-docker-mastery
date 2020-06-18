@@ -1,0 +1,4 @@
+kind: # list of resources that cluster supports
+apiVersion: # api versions that the cluster supports
+metadata: # should has name
+spec: # all specs

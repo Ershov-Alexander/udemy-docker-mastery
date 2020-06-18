@@ -56,3 +56,32 @@ docker-compose down
 # build images every time
 docker-compose build
 docker-compose up --build
+
+########################
+# Swarm
+########################
+
+# activate swarm mode
+docker swarm init
+
+# managing swarm nodes
+docker node
+
+# managing swarm services (like docker run)
+docker service
+
+# change number of nodes for a given service
+docker sevice update --replicas
+
+# update service using given image
+docker docker sevice update --image image_name service_name
+
+# change role (manager / worker)
+docker node update --role
+
+# deploy stack using docker-compose file
+# has deploy key, but can't use build
+docker stack deploy -c compose_file_path
+
+# create secret
+docker secret create secret_name path_to_secret_content
